@@ -1,22 +1,30 @@
+<!--Establece el tipo de estándar del documento-->
 <!DOCTYPE html>
 <!--Ejemplo de un conjunto de documentos html con navegación interna-->
 <html lang="es">
+<!--Colección de metadatos que interpreta el navegador, pero no tiene una representación visual-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nombre de la Pestaña</title>
 </head>
+<!--Representación de todo el contenido de la página web-->
 <body>
     <!--Titular de mayor tamaño-->
     <h1><a href="index.html" target="_self"></a></h1>
     <!--Panel de navegación con botones-->
     <nav>
+        <!--
+            Atributos de los Enlaces:
+            target: Define donde se abrirá el recurso solicitado. Por norma general siempre que uséis rutas absolutas pondréis como valor "_blank". El valor por defecto es "_self" (es como no poner nada).
+            download: Atributo booleano, sirve para descargar el recurso solicitado. IMPORTANTE, el recurso debe estar en tu mismo servidor.
+        -->
         <a href="Pagina1.html" target="_self"><button>Página #1</button></a>
         <a href="Pagina2.html" target="_self"><button>Página #2</button></a>
         <a href="Pagina3.html" target="_self"><button>Página #3</button></a>
         <a href="Pagina4.html" target="_self"><button>Página #4</button></a>
     </nav>
-    <img src="images/Etiquetas.jpg" width="720px" alt="Muestra de etiquetas HTML">
+    <img src="assets/images/Etiquetas.jpg" width="720px" alt="Muestra de etiquetas HTML">
 </body>
 </html>

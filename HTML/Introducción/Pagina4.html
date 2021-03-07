@@ -20,48 +20,68 @@
     <!--Titular de segundo nivel o subtitulo-->
     <h2>Contenido #4</h2>
     <!--Define una tabla con filas y columnas-->
+    <!--
+        Las tablas en HTML sirven para mostrar contenido tabulado.
+        La estructura básica de una tabla se compone de:
+            table -> Etiqueta que encierra una tabla.
+            tr -> table row, etiqueta que construye una fila.
+            td -> table data, etiqueta que construye una celda.
+        Truco: El número de celdas dentro de un tr establecerá el número de columnas de la tabla.
+        + Los títulos de las tablas se establecen con la etiqueta caption, es una etiqueta opcional, y según la especificación esa etiqueta se coloca justo después de la etiqueta table.
+        + Las cabeceras de las tablas se establecen con la etiqueta thead.
+    -->
     <table>
+        <caption>TABLA DE EJEMPLO</caption>
+        <!--Marca en el encabezado de cada columna-->
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Teléfono</th>
+                <th>Correo</th>
+            </tr>
+        </thead>
         <!--La tabla se define fila por fila-->
-        <tr>
-            <!--Marca en el encabezado de cada columna-->
-            <th>Nombre</th>
-            <th>Apellido</th>
-            <th>Teléfono</th>
-            <th>Correo</th>
-        </tr>
-        <tr><td>Pedro</td>
-            <td>Alarcón</td>
-            <td>300 123 4567 </td>
-            <td><a href="mailto:bpataquivax@unal.edu.co">bpataquivax@unal.edu.co</a></td>
-        </tr>
-        <tr><td>Fulano</td>
-            <td>De Tal</td>
-            <td>300 765 4321</td>
-            <td><a href="mailto:fdetalz@unal.edu.co">fdetalz@unal.edu.co</a></td>
-        </tr>
-        <tr><td>
-            <!--Indica una lista en esta celda-->
-            <ul>
-                <li>María Mercedes</li>
-                <li>Mechas</li>
-                <li>Mechita</li>
-                <li>Mariamecha</li>
-            </ul>
-        </td>
-            <td>Señora de Tal </td>
-            <td>123 456 7890 </td>
-            <td><a href="mailto:mmpataquivat@unal.edu.co">mmpataquivat@unal.edu.co</a></td>
-        </tr>
-        <tr><td>Simón </td>
-            <td>Bolivar </td>
-            <td>098 765 4321 </td>
-            <td><a href="mailto:sbolivar@unal.edu.co">sbolivar@unal.edu.co</a></td>
-        </tr>
-        <tr><td>Leonardo </td>
-            <td>Da Vinci </td>
-            <td>300 123 4444 </td>
-            <td><a href="mailto:ldavinci@unal.edu.co">ldavinci@unal.edu.co</a></td>
-        </tr>
-        </table>
+        <tbody>
+            <tr><td>Pedro</td>
+                <td>Alarcón</td>
+                <td>300 123 4567 </td>
+                <td><a href="mailto:bpataquivax@unal.edu.co">bpataquivax@unal.edu.co</a></td>
+            </tr>
+            <tr><td>Fulano</td>
+                <td>De Tal</td>
+                <td>300 765 4321</td>
+                <td><a href="mailto:fdetalz@unal.edu.co">fdetalz@unal.edu.co</a></td>
+            </tr>
+            <tr><td>
+                <!--Indica una lista en esta celda-->
+                <ul>
+                    <li>María Mercedes</li>
+                    <li>Mechas</li>
+                    <li>Mechita</li>
+                    <li>Mariamecha</li>
+                </ul>
+            </td>
+                <td>Señora de Tal </td>
+                <td>123 456 7890 </td>
+                <td><a href="mailto:mmpataquivat@unal.edu.co">mmpataquivat@unal.edu.co</a></td>
+            </tr>
+            <tr><td>Simón </td>
+                <td>Bolivar </td>
+                <td>098 765 4321 </td>
+                <td><a href="mailto:sbolivar@unal.edu.co">sbolivar@unal.edu.co</a></td>
+            </tr>
+            <tr><td>Leonardo </td>
+                <td>Da Vinci </td>
+                <td>300 123 4444 </td>
+                <td><a href="mailto:ldavinci@unal.edu.co">ldavinci@unal.edu.co</a></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">------------------------------Este es un pie de tabla opcional.------------------------------</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>

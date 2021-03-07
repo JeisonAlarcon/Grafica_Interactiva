@@ -17,11 +17,56 @@
         <a href="Pagina3.html" target="_self"><button>Página #3</button></a>
         <a href="Pagina4.html" target="_self"><button>Página #4</button></a>
     </nav>
-    <!--Titular de segundo nivel o subtitulo-->
-    <h2>Contenido #1</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo commodi odit ut perspiciatis? Ipsa id repellendus facilis maxime quas, atque veniam voluptatum ea exercitationem, odit eius ad? A, nemo ratione.</p>
-    <p>Obcaecati similique veniam doloremque dolorem animi nisi eligendi voluptate maxime nemo qui, eum beatae, asperiores laborum tempora. Veniam dolorum, quae enim reprehenderit neque ea, animi consectetur eos iste sequi asperiores?</p>
-    <p>Temporibus, aliquid quos! A voluptatem harum soluta animi debitis voluptates eveniet vitae quia? Voluptatum quis eaque harum repellendus. Voluptatibus quo nostrum expedita porro nam asperiores! Aliquam in nemo animi sequi!</p>
-    <p>Est libero magnam aliquam delectus maiores eveniet quas, quod molestias porro reiciendis eius repudiandae modi distinctio esse adipisci aliquid fugit cum. Facilis expedita explicabo tempora fuga necessitatibus architecto natus sunt.</p>
+    <!--
+        section: Es un contenedor genérico que agrupa contenido que está relacionado. Cuando creamos bloques cuyo contenido es parte de un bloque total usaremos section.
+        article: Es un contenedor que representa contenido independiente, es decir, podemos leer ese fragmento en cualquier otro sitio y tendría sentido por sí mismo.
+        aside: Se utiliza para representar contenido indirectamente relacionado pero que no forma parte del contenido principal
+        Anidamiento:
+            Un section puede contener articles, por ejemplo, si tenemos varios artículos que hablan sobre noticias, deben ir dentro de un section, ya que es contenido relacionado entre sí, y los article serían cada una de las noticias porque podríamos leer cada una sin haber leído el resto, y seguiría teniendo sentido.
+            El article es definido como un componente de la página de contenido independiente, esto implica que esta etiqueta pueda tener un header y un footer propios.
+            También existe el caso en el que un article contenga varias secciones, el artículo independiente podría ser navegadores y este contener dentro secciones como navegadores más utilizados en 2021.
+    -->
+    <header>
+        <!--Titular de segundo nivel o subtitulo-->
+        <h2>Contenido #1</h2>
+    </header>
+    <aside>
+        Pude validar que su sintaxis escrita en HTML5 sea correcta en el siguiente <a href="https://validator.w3.org" target="_blank">link</a>
+    </aside>
+    <main>
+        <!--SECTION con sections dentro y anidando articles-->
+        <section>
+            <h2>Section como contedor</h2>
+            <section>
+                <h3>Noticias del Día</h3>
+                <article>
+                    <header>
+                        <h4>Noticia 1</h4>
+                    </header>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, porro cumque consectetur esse perferendis mollitia deserunt harum optio id. Consequuntur quaerat esse excepturi exercitationem eius nam ad ipsam nostrum sed.</p>
+                    <footer>La noticia 1 ocurrió en Madrid</footer>
+                </article>
+                <article>
+                    <h4>Noticia 2</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolore sed architecto iusto aut similique ea nulla consequuntur doloribus explicabo aliquid soluta, optio veritatis! Perferendis minima incidunt architecto veniam vel!</p>
+                </article>
+            </section>
+        </section>
+        <!--ARTICLE anidando sections-->
+        <article>
+            <h2>Navegadores más Utilizados en 2021</h2>
+            <section>
+                <header>
+                    <h3>Chrome</h3>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quos maxime nisi accusamus quod ipsa, sit error inventore culpa dolore tempora quia optio minus ab voluptatum. Recusandae maiores a itaque!</p>
+                <footer>Creado por Google</footer>
+            </section>
+            <section>
+                <h3>Firefox</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eos quis odio veritatis praesentium deserunt architecto obcaecati nesciunt sint laborum doloribus atque, omnis veniam id dolorem perspiciatis molestias inventore impedit.</p>
+            </section>
+        </article>
+    </main>
 </body>
 </html>
